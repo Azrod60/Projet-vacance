@@ -1,0 +1,118 @@
+body {
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: rgb(160, 160, 160);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 91);
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 16px;
+    padding-left: 50px;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.left {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+.right{
+    margin-left: auto;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    gap: 48px;
+}
+
+.bcg{
+    padding: 8px 16px;
+    color: white;
+    font-weight: 800;
+}
+
+.bcg:hover {
+    background-color: white;
+    border-radius: 25px;
+    color: rgb(0, 0, 91);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px 0px;
+    gap: 20px;
+}
+
+.serv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 25%;
+}
+
+#calcul, #todo, #citation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 200px;
+    padding: 50px;
+}
+
+#calcul i{
+    padding: 50px 55px;
+}
+
+i {
+    font-size: xx-large;
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 100%;
+}
+
+i:hover {
+    background-color: black;
+    color: white;
+}
+
+h2, p {
+    text-align: center;
+    height: 50px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    font-size: 16px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="Todo.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/main.html" class="left">Home</a>
+        <div class="right">
+          <a href="/Calc.html" class="bcg">Calculatrice</a>
+          <a href="/Todo.html" class="bcg2">To do list</a>
+          <a href="/Citation.html" class="bcg">Générateur de citation</a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="todo-container">
+        <h1>To do list</h1>
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Ajouter une nouvelle tâche..."
+        />
+        <button onclick="addTask()">Ajouter</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+    <footer>
+      <p>© 2024 All Rights Reserved. By HTML Design</p>
+    </footer>
+    <script src="Todo.js"></script>
+  </body>
+</html>
