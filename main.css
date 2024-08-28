@@ -36,8 +36,7 @@ a {
   color: white;
 }
 
-label,
-#mobile {
+label, #mobile {
   display: none;
 }
 
@@ -132,7 +131,7 @@ footer {
     height: 220px;
   }
 
-  .right a {
+  .right a{
     width: 50%;
   }
 
@@ -142,6 +141,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
     font-size: 40px;
     color: white;
     cursor: pointer;
@@ -149,19 +149,24 @@ footer {
 
   #mobile:checked + .right {
     display: flex;
-  }
+    position: absolute;
+    top: 70px; right: -75px;
+    width: 200px;
+    height: 250px;
+}
 }
 
-@media all and (max-width: 1200px) {
-  .serv {
-    flex-wrap: wrap;
-  }
+@media all and (max-width: 1200px) 
+{
+    .serv{
+        flex-wrap: wrap;
+    }
 
-  #calcul {
-    margin-bottom: 20px;
-  }
+    #calcul{
+        margin-bottom: 20px;
+    }
 
-  #todo {
-    margin-bottom: 20px;
-  }
+    #todo{
+        margin-bottom: 20px;
+    }
 }
