@@ -3,23 +3,23 @@ let currentInput = '';
 let currentOperator = null;
 let resultDisplayed = false;
 
-function appendNumber(number) {
+function Number(num) {
     if (resultDisplayed) {
         currentInput = '';
         resultDisplayed = false;
     }
-    if (number === '.' && currentInput.includes('.')) return;
-    currentInput += number;
+    if (num === '.' && currentInput.includes('.')) return;
+    currentInput += num;
     updateDisplay(currentInput);
 }
 
-function appendOperator(operator) {
-    if (currentInput === '' && operator !== '-') return;
+function Operator(ope) {
+    if (currentInput === '' && ope !== '-') return;
     if (currentOperator && currentInput !== '') {
         calculate();
     }
-    currentOperator = operator;
-    currentInput += ' ' + operator + ' ';
+    currentOperator = ope;
+    currentInput += ' ' + ope + ' ';
     updateDisplay(currentInput);
 }
 
